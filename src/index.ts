@@ -20,6 +20,7 @@ interface Bar {
     bar: string;
 }
 
+// this type uses messages as oneof values
 type FooBarOneof =
     | { oneofKind: "foo"; foo: Foo; }
     | { oneofKind: "bar"; bar: Bar; }
